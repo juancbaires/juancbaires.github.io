@@ -3,7 +3,7 @@ body {
 .wrapper{
   z-index:0;
   height: 780px;
-  background-image: url('https://www.villaextechnologies.com/wp-content/uploads/2018/03/web-design-2906159_960_720.jpg');
+  background-image: url('img/backgroundImage.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
