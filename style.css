@@ -1,55 +1,78 @@
-body{
-    min-height: 100vh;
-    background-color: rgba(207, 207, 207, 0.438);
-    margin:0;
+body {
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
-    background-color:grey;
-    border-radius: 3px;
-
+.wrapper{
+  z-index:0;
+  height: 780px;
+  background-image: url('https://www.villaextechnologies.com/wp-content/uploads/2018/03/web-design-2906159_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-li{
-    list-style-type: none;
-    align-items: center;
+nav {
+  display: flex;
+  height: 50px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  opacity: .8;
+  postion: relative;
+}
+.container {
+  display: flex; 
+  justify-content: space-around;
+  border: 1px solid grey;
+  height: 720px; 
+  margin-top: 1px;
+  z-index: 1;
+  background-color: grey;
+  opacity: .5;
+  flex-direction: column;
+  position: relative;
+}
+a {
+  display: flex;
+  align-self: center;
+  height: 50px;
+  width: 160px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 34px;
+  border-radius: 4px;
+  opacity: .8;
+}
+.navbutton:hover {
+  background-color: #2accc9;
+}
+.smallBar {
+  height: 5px;
+  boder: 1px solid balck;
+  width: 100%;
+  background-color: #2accc9;
+  border-radius: 4px;
+  opacity: .7; 
+}
+.firstMsg{
+  align-self: center;
+  color: white;
+  font-size: 48px;
+  height: 50px;
+  width: 700px;
+  z-index: 2;
+  font-family:'Open Sans', sans serif;
+  postion: absolute;
 }
 
-nav{
-}
-a{
-    text-decoration: none;
-    color: white;
-    font-size: 36px;
-}
-header{
-}
-.mainbody{
-    display:flex;
-    padding: 25px auto;
-    justify-content: space-between;
-    margin:15px;
-}
-
-img{
-    border-radius: 3px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 300px;
-    width: 300px;
-    margin-left: 5px;
-}
-
-.contact{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    height: 50px;
-    margin-top: 100px;
-}
-.shadow{
-    display: flex;
-    justify-content: space-bewteen;
-    align-items: center;
+.secondMsg{
+  color: white;
+  align-self:center;
+  width: 300px;
+  height: 100px;
+  margin-top:200px;
+  font-size: 48px;
+  font-family:'Open Sans', sans-serif;
+  z-index: 2;
+  position: absolute;
 }
