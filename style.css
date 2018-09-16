@@ -1,8 +1,8 @@
 body {
-    
+  margin: 0;
+  position: relative;
 }
-.wrapper{
-  z-index:0;
+.wrapper {
   height: 780px;
   background-image: url('img/backgroundImage.png');
   background-repeat: no-repeat;
@@ -12,22 +12,22 @@ body {
 nav {
   display: flex;
   height: 50px;
-  border-radius: 4px;
   align-items: center;
   justify-content: space-around;
   background-color: black;
-  opacity: .8;
-  position: relative;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
+
 .container {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
-  border: 1px solid grey;
-  height: 720px; 
+  height: 773px;
   margin-top: 1px;
-  z-index: 1;
-  background-color: grey;
-  opacity: .5;
+  z-index: 100;
+  opacity: 0.5;
   flex-direction: column;
   position: relative;
 }
@@ -42,70 +42,100 @@ a {
   text-decoration: none;
   font-size: 34px;
   border-radius: 4px;
-  opacity: .8;
+  opacity: 0.8;
 }
 .navbutton:hover {
   background-color: #2accc9;
 }
-.smallBar {
-  height: 5px;
-  boder: 1px solid balck;
-  width: 100%;
-  background-color: #2accc9;
-  border-radius: 4px;
-  opacity: .7; 
-}
-.firstMsg{
+
+.firstMsg {
   align-self: center;
   color: white;
   font-size: 48px;
   height: 50px;
   width: 700px;
   z-index: 2;
-  font-family:'Open Sans', sans serif;
-  postion: absolute;
+  font-family: 'Open Sans', sans serif;
 }
 
-.secondMsg{
+.secondMsg {
   color: white;
-  align-self:center;
+  align-self: center;
   width: 300px;
   height: 100px;
-  margin-top:200px;
+  margin-top: 200px;
   font-size: 48px;
-  font-family:'Open Sans', sans-serif;
-  z-index: 2;
-  position: absolute;
+  font-family: 'Open Sans', sans-serif;
 }
+
 .wrapper2 {
-    display: flex;
-    justify-content: space-around ;
-    height: 700px;
-    width:100%;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 700px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
 }
-.images1{
-    margin-top: -150px;
-    background-image: url('img/firstProject.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
-    width: 600px;
-    border: 1px solid black;
-    border-radius: 8px;
-}
-
-.images2{
-    margin-top: -150px;
-    height: 400px;
-    width: 600px;
-    border: 1px solid black;
-    border-radius: 8px;
+.images1 {
+  margin-top: -150px;
+  background-image: url('img/firstProject.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 600px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
-h1{
-    margin-top: 20px;
-    text-align: center;
+.images2 {
+  margin-top: -150px;
+  height: 400px;
+  width: 600px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+.imagewrap {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 600px;
+  height: 400px;
+  z-index: 9;
+  display: none;
+  justify-content: space-around;
+  align-content: center;
+  
+}
+.images1:hover .imagewrap {
+  display: flex;
+}
+.images2:hover .imagewrap {
+  display: flex;
+}
+
+.text {
+  position: absolute;
+  color: white; 
+  display: none;
+  align-self: center;
+  text-align: center;
+  z-index: 10;
+}
+.images1:hover .text {
+  display: flex;
+}
+.images2:hover .text {
+  display: flex;
 }
