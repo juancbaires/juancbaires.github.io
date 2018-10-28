@@ -1,136 +1,221 @@
-body {
+body, html {
   margin: 0;
-  position: relative;
   font-family: 'Montserrat';
+  width: 100%;
+  height: 100%;
 }
-
+label {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+#toggle {
+  display: none;
+}
 nav {
-  display: flex-start;
+  display: flex-end;
   align-items: center;
-  justify-content: space-around;
-  z-index: 102;
+  width: 100%;
+  margin: 15px;
 }
 .navContainer {
-  background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
-  background-size: cover;
-  height: 725px;
+  background-color: black;
+  height: 75px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
+  border-bottom: 1px solid grey;
+  box-shadow: 0 4px 2px -2px gray;
 
-a {
-  display: flex;
-  align-self: center;
-  height: 50px;
-  width: 160px;
-  justify-content: space-around;
-  align-items: center;
-  color: whitesmoke;
+}
+.navbutton {
   text-decoration: none;
-  font-size: 40px;
-  border-radius: 4px;
-  z-index: 101;
+  font-size: 25px;
+  padding: 5px;
+  color: white;
 }
-.navbutton:hover {
-  color: #0080FF;
-}
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 40px;
+  }
 
-.portfolioHeader{
-  margin-top: 60px;
-  /* padding-top: 10px; */
-  color: #0080FF;
-}
-
-.wrapper2 {
+  nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .navContainer {
+    height: 150px;
+  }
+#toggle:checked + nav {
   display: flex;
-  justify-content: space-around;
-  height: 700px;
+}
+.aboutMe {
   width: 100%;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.leftWhoAmI img{
+  display: none;
+}
+.aboutMeH {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.aboutMeP {
+  margin: 30px;
+  font-size: 15px;
+}
+}
+#orange {
+  color: #EA8825;
+}
+.aboutMe {
+height: 700px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.leftWhoAmI {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 700px;
+  background-color: #f1f2f3;
+
+}
+
+.avatar {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 100%;
+  object-fit: cover;
+}
+.fa-arrow-down {
+  color: #0E34A0;
+  text-decoration: none;
+}
+.fa-quote-left, .fa-quote-right {
+  color: #EA8825;
+  font-size: 80px;
+}
+.statement {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top:0;
 }
-.images1 {
-  margin-top: -150px;
-  background-image: url('img/firstProject.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
-  width: 500px;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  position: relative;
+.quoteP {
+  font-size: 35px;
+  color: grey;
+  font-style: italic;
+}
+.quoteH {
+  font-size: 35px;
+  font-style: italic;
+}
+.aboutMeP {
+  margin: 30px;
+  font-size: 25px;
+}
+.aboutMeH {
+  font-size: 40px;
+  color:#EA8825;
+}
+.aboutParagraph {
+  margin: 50px;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.statement p{  
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  padding: 30px;
+}
+
+.imageHolder {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 15px;
+}
+.portfolio {
   display: flex;
-  align-content: center;
-  justify-content: center;
-
-}
-
-.images2 {
-  margin-top: -150px;
-  background-image: url('img/2ndProject.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
-  width: 500px;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-left: 15px;
-
-}
-
-h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 56px;
-  color: whitesmoke;
-}
-.imagewrap {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 500px;
-  height: 400px;
-  z-index: 9;
-  display: none;
+  width: 100%;
+  height: 500px;
+  align-items: center;
   justify-content: space-around;
-  align-content: center;
 }
-.images1:hover .imagewrap {
-  display: flex;
+.imageOne {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
 }
-.images2:hover .imagewrap {
-  display: flex;
+.imageTwo {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+}
+.imageThree {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  background-image: url("./img/thirdProject.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.text {
-  position: absolute;
-  color: white;
-  display: none;
-  align-self: center;
-  text-align: center;
-  z-index: 10;
-  width: 400px;
-}
-.images1:hover .text {
-  display: flex;
-}
-.images2:hover .text {
-  display: flex;
-}
-img {
-  height: 70px;
-  width: 70px;
-  align-self: center;
-  color: white;
-}
-.myName {
-  color: #0080FF;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* this part below is for testing different features */
+
+/* .arrow {
+  text-align: center;
+  margin: 8% 0;
+  height: 10px;
+} */
+/* .bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+} */
+
+/* @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+} */

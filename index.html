@@ -15,31 +15,47 @@
 </head>
 
 <body>
-    <!-- <nav>
-        <a href="#" class="navbutton">Home</a>
-        <a href="#" class="navbutton">About</a>
-        <a href="#" class="navbutton">Portfolio</a>
-    </nav> -->
     <div class="navContainer">
+        <label for="toggle">&#9776</label>
+        <input type="checkbox" id="toggle">
         <nav>
             <a href="#" class="navbutton">Home</a>
-            <a href="#" class="navbutton">About</a>
+            <a href="#about" class="navbutton">About</a>
             <a href="#portfolio" class="navbutton">Portfolio</a>
+            <a id="orange" href="#" class="navbutton">Contact</a>
         </nav>
-        <h1>{ <span class="myName">Hi!</span> Im <span class="myName">Juan</span> }
-            <br><span class="myName">Let</span> me work on your <span class="myName">Project</span></h1>
     </div>
-    <h1 class="portfolioHeader">Portfolio</h1>
-    <div id="portfolio" class="wrapper2">
-        <div class="images1">
-            <div class="imagewrap"></div>
-            <a href="https://juancbaires.github.io/Trivia/" target="_blank" class="text">Front-End Trivia Game</a>
+    <div class="statement">
+        <p class="quoteP"><i class="fa fa-quote-left" aria-hidden="true"></i> Every problem has a solution. <i class="fa fa-quote-right"
+                aria-hidden="true"></i></p>
+        <p class="quoteH">You just have to be creative enough to find it.</p>
+    </div>
+    <section id="about" class="aboutMe">
+        <div class="leftWhoAmI">
+            <h2 class="aboutMeH">So, who am I?</h3>
+                <img class="avatar" src="./img/HeadShot.jpg" alt="selfie">
+                <div class="aboutParagraph">
+                    <p class="aboutMeP">I am Juan, a Front-End Developer and musician who writes clean,
+                        efficient and
+                        reusable code. Driven by
+                        the love I have for my family and reinforced by my experience as an Army veteran and father;
+                        I am
+                        able to adapt and overcome any problem at hand. </p>
+                </div>
         </div>
-        <div class="images2">
-            <div class="imagewrap"></div>
-            <a href="https://sleepy-bayou-76332.herokuapp.com/" target="_blank" class="text">PixaShare</a>
+    </section>
+    <section class="portfolio">
+        <div class="imageHolder">
+            <div class="imageOne">
+
+            </div>
+            <div class="imageTwo">
+            </div>
+            <div class="imageThree">
+            </div>
         </div>
-        <script src="portfolio.js"></script>
+    </section>
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
