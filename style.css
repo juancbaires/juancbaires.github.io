@@ -166,11 +166,19 @@ align-items: center;
   width: 350px;
   height: 350px;
   border: 1px solid black;
+  background-image: url("./img/firstProject.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .imageTwo {
   width: 350px;
   height: 350px;
   border: 1px solid black;
+  background-image: url("./img/2ndProject.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .imageThree {
   width: 350px;
