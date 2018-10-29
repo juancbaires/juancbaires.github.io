@@ -19,13 +19,15 @@ nav {
   margin: 15px;
 }
 .navContainer {
+  position: fixed;
   background-color: black;
-  height: 75px;
+  height: 55px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid grey;
   box-shadow: 0 4px 2px -2px gray;
-
+  width: 100%;
+  z-index: 4;
 }
 .navbutton {
   text-decoration: none;
@@ -70,6 +72,7 @@ nav {
   margin: 30px;
   font-size: 15px;
 }
+
 }
 #orange {
   color: #EA8825;
@@ -163,31 +166,145 @@ align-items: center;
   justify-content: space-around;
 }
 .imageOne {
+  cursor: pointer;
+  height: 350px;
+  perspective: 600;
+  position: relative;
+  width: 350px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.imageTwo {
+  cursor: pointer;
+  height: 350px;
+  perspective: 600;
+  position: relative;
+  width: 350px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+.side1 {
   width: 350px;
   height: 350px;
-  border: 1px solid black;
   background-image: url("./img/firstProject.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.imageTwo {
-  width: 350px;
-  height: 350px;
-  border: 1px solid black;
-  background-image: url("./img/2ndProject.png");
+.side2 {
+  background-image: url("./img/secondProject.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.imageThree {
   width: 350px;
   height: 350px;
-  border: 1px solid black;
+}
+.side{
   background-image: url("./img/thirdProject.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 350px;
+  height: 350px;
+}
+.imageThree {
+  cursor: pointer;
+  height: 350px;
+  perspective: 600;
+  position: relative;
+  width: 350px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #f1f2f3;
+  color: #EA8825;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.card2 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card2:hover {
+  transform: rotateY(180deg);
+}
+.card2 .side2 {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card2 .back2 {
+  background: #f1f2f3;
+  color: #EA8825;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.card1 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card1:hover {
+  transform: rotateY(180deg);
+}
+.card1 .side1 {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card1 .back1 {
+  background: #f1f2f3;
+  color: #EA8825;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.website {
+  color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  height: 45px;
+}
+footer {
+    background-color: black;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 4px 2px -2px gray;
+    width: 100%;
+  }
+footer p {
+  color: white;
+  font-size: 35px;
 }
 
 
@@ -201,29 +318,3 @@ align-items: center;
 
 
 
-
-
-/* this part below is for testing different features */
-
-/* .arrow {
-  text-align: center;
-  margin: 8% 0;
-  height: 10px;
-} */
-/* .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-} */
-
-/* @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-} */
