@@ -20,11 +20,11 @@
     <div class="navContainer">
         <label for="toggle">&#9776</label>
         <input type="checkbox" id="toggle">
-        <nav>
-            <a href="#" class="navbutton">Home</a>
+        <nav id="nav">
+            <a href="#nav" class="navbutton">Home</a>
             <a href="#about" class="navbutton">About</a>
             <a href="#portfolio" class="navbutton">Portfolio</a>
-            <a id="orange" href="#" class="navbutton">Contact</a>
+            <a id="orange" href="#contact" class="navbutton">Contact</a>
         </nav>
     </div>
     <div class="statement">
@@ -37,7 +37,7 @@
             <h2 class="aboutMeH">So, who am I?</h3>
                 <img class="avatar" src="./img/HeadShot.jpg" alt="selfie">
                 <div class="aboutParagraph">
-                    <p class="aboutMeP">I am Juan, a Front-End Developer and musician who writes clean,
+                    <p class="aboutMeP">I'm Juan, a Front-End Developer and musician who writes clean,
                         efficient and
                         reusable code. Driven by
                         the love I have for my family and reinforced by my experience as an Army veteran and father;
@@ -46,12 +46,12 @@
                 </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="imageHolder">
             <div class="imageOne">
                 <div class="card1">
                     <div class="side1"></div>
-                    <div class="side1 back1">Trivia Game made with HTMl, CSS & VanillaJS. <a class="website" href="#">Learn
+                    <div class="side1 back1">Trivia Game made with HTMl, CSS & VanillaJS. <a class="website" href="https://juancbaires.github.io/Trivia/">Learn
                             More</a>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                 <div class="card2">
                     <div class="side2"></div>
                     <div class="side2 back2 Pixashare">Created using ExpressJS, MongoDB, Handlebars & bootstrap. <a
-                            class="website" href="#">Learn More</a></div>
+                            class="website" href="https://sleepy-bayou-76332.herokuapp.com/index">Learn More</a></div>
                 </div>
             </div>
 
@@ -68,13 +68,16 @@
                 <div class="card">
                     <div class="side"></div>
                     <div class="side back">Pickup Games Application made with ExpressJS, MongoDB, & React. <a class="website"
-                            href="#">Learn More</a></div>
+                            href="http://loose-action.surge.sh/">Learn More</a></div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p><i class="fab fa-github"></i></p>
+    <footer id="contact">
+        <a href="https://github.com/juancbaires"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/juan-baires-2969a5122/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:juancbaires@gmail.com?Subject=Hello" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="./download/JuanBaires-WDI Resume.pdf" download="proposed_file_name"><i class="far fa-file-pdf"></i></a>
     </footer>
     <script src="portfolio.js"></script>
 </body>

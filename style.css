@@ -111,7 +111,7 @@ align-items: center;
   font-size: 80px;
 }
 .statement {
-  height: 700px;
+  height: 670px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -191,9 +191,9 @@ align-items: center;
   background-position: center;
 }
 .side2 {
-  background-image: url("./img/secondProject.png");
+  background-image: url("./img/Screen Shot 2018-10-29 at 9.14.06 PM.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 350px;
   height: 350px;
@@ -298,15 +298,19 @@ footer {
     height: 90px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-bottom: 1px solid grey;
     box-shadow: 0 4px 2px -2px gray;
     width: 100%;
   }
-footer p {
+footer a {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
+  padding: 25px;
 }
-
+footer a:hover {
+  color: #EA8825;
+}
 
 
 
