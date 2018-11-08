@@ -269,29 +269,28 @@ h1{
   height: 380px;
   width: 600px;
 }
-#contact-info {
+#contact--info {
     background-color: black;
     height: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid grey;
-    box-shadow: 0 4px 2px -2px gray;
     width: 100%;
   }
-#contact-info a {
+#contact--info a {
   color: white;
   font-size: 40px;
   padding: 25px;
 }
-#contact-info a:hover {
+#contact--info a:hover {
   color: #EA8825;
 }
 @media only screen and (max-width:798px) {
   /* this part is for tablet size screens! */
   .faceShot{
     background-size: cover;
+    width: 100%;
   }
   #portfolio {
     width:100%;
@@ -375,11 +374,11 @@ h1{
     text-align: center;
   }
 .Project {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around; 
-  max-height: 1200px;
+  /* max-height: 1200px; */
 }
 
 .orangebar {
@@ -393,6 +392,13 @@ h1{
 }
 .image2 {
   order: 0;
+  width: 100%;
+}
+.image {
+  width: 100%;
+}
+.image3 {
+  width: 100%;
 }
 #second {
   order: 1;
@@ -400,4 +406,7 @@ h1{
   body {
     cursor: pointer
   }
+}
+.footer--bottom {
+  margin-top: 70px;
 }
