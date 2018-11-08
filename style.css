@@ -9,31 +9,39 @@ label {
   font-size: 25px;
   display: none;
 }
-#toggle {
-  display: none;
-}
-nav {
-  display: flex-end;
-  align-items: center;
-  width: 100%;
-  margin: 15px;
-}
-.navContainer {
-  position: fixed;
-  background-color: black;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid grey;
-  box-shadow: 0 4px 2px -2px gray;
-  width: 100%;
-  z-index: 4;
-}
-.navbutton {
-  text-decoration: none;
-  font-size: 25px;
-  padding: 5px;
+
+#nav a{
   color: white;
+  font-size: 28px;
+  font-family: 'Montserrat' !important;
+
+}
+#nav {
+  background-color: transparent;
+  flex-grow: 2;
+}
+.navbar-toggler{
+  background-color: #EA8825 !important;    
+}
+#nav .navbar-brand{
+  font-size: 28px !important;
+}
+
+
+.faceShot {
+  background-image: url("./img/HeadShot.jpg"),linear-gradient(220deg, rgb(41, 41, 39) 100%, rgb(11, 14, 17) 0%);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.quoteParagraph{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 500px) {
   label {
@@ -42,7 +50,7 @@ nav {
     padding: 15px;
     font-size: 40px;
   }
-  #portfolio {
+  .portfolio {
     display: flex;
     height: 1700px;;
     align-items: center;
@@ -54,17 +62,8 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
-  nav {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .navContainer {
-    height: 150px;
-  }
-#toggle:checked + nav {
-  display: flex;
-}
+
+
 .aboutMe {
   width: 100%;
   display: flex;
@@ -80,17 +79,16 @@ nav {
   margin-top: 15px;
 }
 .aboutMeP {
-  font-size: 15px;
+  font-size: 13px;
 }
 }
 
 /* This is where the above media query ends! */
 #orange {
-  color: #EA8825;
+  color: #EA8825 !important;
 }
 
 .aboutMe {
-height: 800px;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -123,27 +121,26 @@ align-items: center;
   font-size: 80px;
 }
 .statement {
-  height: 670px;
+  height:100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
-
 
 .quoteP {
   font-size: 45px;
   color: grey;
   font-style: italic;
   text-align: center;
+  flex-grow: 1;
 }
 .quoteH {
   font-size: 35px;
   font-style: italic;
 }
 .aboutMeP {
-  
+  align-self: center;
   font-size: 25px;
   text-align: center;
 }
@@ -154,7 +151,10 @@ align-items: center;
 .aboutParagraph {
   margin: 50px;
   text-align: center;
-  max-width: 700px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 @keyframes slideInFromLeft {
   0% {
@@ -164,201 +164,140 @@ align-items: center;
     transform: translateX(0);
   }
 }
-
-.statement p{  
+statement p{  
   animation: 1s ease-out 0s 1 slideInFromLeft;
   padding: 30px;
 }
 
-.imageHolder {
-  display: inline-grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 40px;
-  grid-row-gap: 15px;
-}
-.portfolio {
-  display: flex;
-  width: 100%;
-  height: 500px;
-  align-items: center;
-  justify-content: space-around;
-}
-.imageOne {
-  cursor: pointer;
-  height: 350px;
-  perspective: 600;
-  position: relative;
-  width: 350px;
-  /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
-}
-.imageTwo {
-  cursor: pointer;
-  height: 350px;
-  perspective: 600;
-  position: relative;
-  width: 350px;
-  /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+/* .portfolio {
 
-}
-.side1 {
-  width: 350px;
-  height: 350px;
-  background-image: url("./img/firstProject.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.side2 {
-  background-image: url("./img/Screen Shot 2018-10-29 at 9.14.06 PM.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 350px;
-  height: 350px;
-}
-.side{
-  background-image: url("./img/thirdProject.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 350px;
-  height: 350px;
-}
-.imageThree {
-  cursor: pointer;
-  height: 350px;
-  perspective: 600;
-  position: relative;
-  width: 350px;
-
-}
-.card {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+} */
+.Project {
+  height: 600px;
   width: 100%;
-}
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-}
-.card .back {
   display: flex;
-  flex-direction: center;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  background: #f1f2f3;
-  color: #EA8825;
-  text-align: center;
-  transform: rotateY(180deg);
-}
-.card2 {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
-}
-.card2:hover {
-  transform: rotateY(180deg);
-}
-.card2 .side2 {
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-}
-.card2 .back2 {
-  display: flex;
-  flex-direction: center;
   align-items: center;
-  justify-content: center;
-  background: #f1f2f3;
-  color: #EA8825;
-  text-align: center;
-  transform: rotateY(180deg);
 }
-.card1 {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
+.image {
+  background: url('./img/firstProject.png'),linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 600px;
 }
-.card1:hover {
-  transform: rotateY(180deg);
+.image2 {
+  background: url('./img/ScreenShot.png'),linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 600px;
 }
-.card1 .side1 {
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
+.firstProjectContent {
+  height: 200px;
+  width: 350px;
+  height: 180px;
+  
 }
-.card1 .back1 {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  justify-content: center;
-  background: #f1f2f3;
-  color: #EA8825;
-  text-align: center;
-  transform: rotateY(180deg);
+.orangebar-right {
+  padding: 0 0 0 2rem;
+  border-right: .5rem solid #EA8825;
+  height: 180px;
+}
+.orangebar {
+  padding: 0 0 0 2rem;
+  border-left: .5rem solid #EA8825;
+  height: 180px;
+}
+i {
+  font-size: 38px;
+  flex-grow: 1;
 }
 .website {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
   background-color: #EA8825;
+  color:black;
+  height: 35px;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 3px;
-  height: 40px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
 }
-.mostInner {
-  height: 200px;
-  width: 200px;
+.website:hover {
+  text-decoration: none;
+  color: white;
+}
+.website-right {
+  background-color: #EA8825;
+  color:black;
+  height: 35px;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.technologies {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;    
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
 }
-footer {
+.technologies-right {
+  display: flex;
+  flex-direction: row;    
+  justify-content: flex-end;
+  align-items: center;
+  width: 350px;
+}
+h1{
+  line-height: 1.2;
+}
+.image3{
+  background: url('./img/thirdProject.png'),linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 600px;
+}
+#contact-info {
     background-color: black;
     height: 90px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid grey;
     box-shadow: 0 4px 2px -2px gray;
     width: 100%;
   }
-footer a {
+#contact-info a {
   color: white;
   font-size: 40px;
   padding: 25px;
 }
-footer a:hover {
+#contact-info a:hover {
   color: #EA8825;
 }
-@media only screen and (max-width:550px) {
-  /* For mobile phones: */
+@media only screen and (max-width:798px) {
+  /* this part is for tablet size screens! */
+  .faceShot{
+    background-size: cover;
+  }
   #portfolio {
     width:100%;
     height: 1250px
   }
-  .imageHolder{
-    display: flex;
-    flex-direction: column;
-  }
+
   .statement{
     display: flex;
     flex-direction: column;
@@ -370,18 +309,95 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 100%;
   }
-  .card:to {
-    transform: rotateY(180deg);
-  }
+
   .aboutMeP {
     width: 100%;
     height: 400px;
     text-align: center;
   }
-  .quoteP{
-    margin-top: 120px;
+.Project {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.orangebar {
+  display: none;
+}
+.orangebar-right {
+  display: none;
+}
+.quoteP {
+  font-size: 28px;
+}
+.image2 {
+  order: 0;
+}
+#second {
+  order: 1;
+}
+  body {
+    cursor: pointer
   }
-  body {cursor: pointer}
+}
+
+@media only screen and (max-width:550px) {
+  /* For mobile phones: */
+  .faceShot{
+    background-size: cover;
+  }
+  #portfolio {
+    width:100%;
+    height: 1250px
+  }
+
+  .statement{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+  }
+  .leftWhoAmI {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .aboutMeP {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+.Project {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  max-height: 1200px;
+}
+
+.orangebar {
+  display: none;
+}
+.orangebar-right {
+  display: none;
+}
+.quoteP {
+  font-size: 28px;
+}
+.image2 {
+  order: 0;
+}
+#second {
+  order: 1;
+}
+  body {
+    cursor: pointer
+  }
 }
