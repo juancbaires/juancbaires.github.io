@@ -4,32 +4,41 @@ body, html {
   width: 100%;
   height: 100%;
 }
+
 label {
   color: white;
   font-size: 25px;
   display: none;
 }
 
-#nav a{
+#nav a {
   color: white;
   font-size: 28px;
   font-family: 'Montserrat' !important;
-
 }
+
 #nav {
   background-color: transparent;
   flex-grow: 2;
+  background: linear-gradient(220deg, rgb(41, 41, 39) 100%, rgb(11, 14, 17) 0%);
+  flex-grow: 2;
+  position: fixed;
+  height: 85px;
+  width: 100%;
+  opacity: .8;
+  background-color: transparent;
 }
-.navbar-toggler{
-  background-color: #EA8825 !important;    
+
+.navbar-toggler {
+  background-color: #EA8825 !important;
 }
-#nav .navbar-brand{
+
+#nav .navbar-brand {
   font-size: 28px !important;
 }
 
-
 .faceShot {
-  background-image: url("./img/HeadShot.jpg"),linear-gradient(220deg, rgb(41, 41, 39) 100%, rgb(11, 14, 17) 0%);
+  background-image: url("./img/HeadShot.jpg"), linear-gradient(220deg, rgb(41, 41, 39) 100%, rgb(11, 14, 17) 0%);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,12 +46,14 @@ label {
   width: 100%;
   height: 100%;
 }
-.quoteParagraph{
+
+.quoteParagraph {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 @media only screen and (max-width: 500px) {
   label {
     display: block;
@@ -52,76 +63,77 @@ label {
   }
   .portfolio {
     display: flex;
-    height: 1700px;;
+    height: 1700px;
+    ;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-}
-.imageHolder {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
-.aboutMe {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-}
-.leftWhoAmI img{
-  display: none;
-}
-.aboutMeH {
-  font-size: 20px;
-  margin-top: 15px;
-}
-.aboutMeP {
-  font-size: 13px;
-}
+  }
+  .imageHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .aboutMe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .leftWhoAmI img {
+    display: none;
+  }
+  .aboutMeH {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .aboutMeP {
+    font-size: 13px;
+  }
 }
 
 /* This is where the above media query ends! */
+
 #orange {
   color: #EA8825 !important;
 }
 
 .aboutMe {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .leftWhoAmI {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 100%;
   height: 700px;
   background-color: #f1f2f3;
-
 }
 
 .avatar {
-  width: 300px; 
-  height: 300px; 
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
   object-fit: cover;
 }
+
 .fa-arrow-down {
   color: #0E34A0;
   text-decoration: none;
 }
+
 .fa-quote-left, .fa-quote-right {
   color: #EA8825;
   font-size: 80px;
 }
+
 .statement {
-  height:100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -135,27 +147,32 @@ align-items: center;
   text-align: center;
   flex-grow: 1;
 }
+
 .quoteH {
   font-size: 35px;
   font-style: italic;
 }
+
 .aboutMeP {
   align-self: center;
   font-size: 25px;
   text-align: center;
 }
+
 .aboutMeH {
   font-size: 40px;
-  color:#EA8825;
+  color: #EA8825;
 }
+
 .aboutParagraph {
   margin: 50px;
   text-align: center;
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-150%);
@@ -164,7 +181,8 @@ align-items: center;
     transform: translateX(0);
   }
 }
-statement p{  
+
+.quoteP {
   animation: 1s ease-out 0s 1 slideInFromLeft;
   padding: 30px;
 }
@@ -172,6 +190,7 @@ statement p{
 /* .portfolio {
 
 } */
+
 .Project {
   height: 600px;
   width: 100%;
@@ -180,8 +199,9 @@ statement p{
   justify-content: center;
   align-items: center;
 }
+
 .image {
-  background: url('./img/firstProject.png'),linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background: url('./img/firstProject.png'), linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,8 +209,9 @@ statement p{
   height: 380px;
   width: 600px;
 }
+
 .image2 {
-  background: url('./img/ScreenShot.png'),linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background: url('./img/ScreenShot.png'), linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
@@ -198,29 +219,33 @@ statement p{
   height: 380px;
   width: 600px;
 }
+
 .firstProjectContent {
   height: 200px;
   width: 350px;
   height: 180px;
-  
 }
+
 .orangebar-right {
   padding: 0 0 0 2rem;
   border-right: .5rem solid #EA8825;
   height: 180px;
 }
+
 .orangebar {
   padding: 0 0 0 2rem;
   border-left: .5rem solid #EA8825;
   height: 180px;
 }
+
 i {
   font-size: 38px;
   flex-grow: 1;
 }
+
 .website {
   background-color: #EA8825;
-  color:black;
+  color: black;
   height: 35px;
   border-radius: 6px;
   text-decoration: none;
@@ -228,13 +253,15 @@ i {
   text-align: center;
   margin-right: 10px;
 }
+
 .website:hover {
   text-decoration: none;
   color: white;
 }
+
 .website-right {
   background-color: #EA8825;
-  color:black;
+  color: black;
   height: 35px;
   border-radius: 6px;
   text-decoration: none;
@@ -245,23 +272,26 @@ i {
 
 .technologies {
   display: flex;
-  flex-direction: row;    
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   width: 250px;
 }
+
 .technologies-right {
   display: flex;
-  flex-direction: row;    
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 350px;
 }
-h1{
+
+h1 {
   line-height: 1.2;
 }
-.image3{
-  background: url('./img/thirdProject.png'),linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+
+.image3 {
+  background: url('./img/thirdProject.png'), linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
@@ -269,35 +299,38 @@ h1{
   height: 380px;
   width: 600px;
 }
+
 #contact--info {
-    background-color: black;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+  background-color: black;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 #contact--info a {
   color: white;
   font-size: 40px;
   padding: 25px;
 }
+
 #contact--info a:hover {
   color: #EA8825;
 }
+
 @media only screen and (max-width:798px) {
   /* this part is for tablet size screens! */
-  .faceShot{
+  .faceShot {
     background-size: cover;
     width: 100%;
   }
   #portfolio {
-    width:100%;
+    width: 100%;
     height: 1250px
   }
-
-  .statement{
+  .statement {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -310,35 +343,32 @@ h1{
     align-items: center;
     height: 100%;
   }
-
   .aboutMeP {
     width: 100%;
     height: 400px;
     text-align: center;
   }
-.Project {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  
-}
-
-.orangebar {
-  display: none;
-}
-.orangebar-right {
-  display: none;
-}
-.quoteP {
-  font-size: 28px;
-}
-.image2 {
-  order: 0;
-}
-#second {
-  order: 1;
-}
+  .Project {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .orangebar {
+    display: none;
+  }
+  .orangebar-right {
+    display: none;
+  }
+  .quoteP {
+    font-size: 28px;
+  }
+  .image2 {
+    order: 0;
+  }
+  #second {
+    order: 1;
+  }
   body {
     cursor: pointer
   }
@@ -346,15 +376,14 @@ h1{
 
 @media only screen and (max-width:550px) {
   /* For mobile phones: */
-  .faceShot{
+  .faceShot {
     background-size: cover;
   }
   #portfolio {
-    width:100%;
+    width: 100%;
     height: 1250px
   }
-
-  .statement{
+  .statement {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -367,46 +396,45 @@ h1{
     align-items: center;
     height: 100%;
   }
-
   .aboutMeP {
     width: 100%;
     height: 400px;
     text-align: center;
   }
-.Project {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; 
-  /* max-height: 1200px; */
-}
-
-.orangebar {
-  display: none;
-}
-.orangebar-right {
-  display: none;
-}
-.quoteP {
-  font-size: 28px;
-}
-.image2 {
-  order: 0;
-  width: 100%;
-}
-.image {
-  width: 100%;
-}
-.image3 {
-  width: 100%;
-}
-#second {
-  order: 1;
-}
+  .Project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* max-height: 1200px; */
+  }
+  .orangebar {
+    display: none;
+  }
+  .orangebar-right {
+    display: none;
+  }
+  .quoteP {
+    font-size: 28px;
+  }
+  .image2 {
+    order: 0;
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .image3 {
+    width: 100%;
+  }
+  #second {
+    order: 1;
+  }
   body {
     cursor: pointer
   }
 }
+
 .footer--bottom {
   margin-top: 70px;
 }
