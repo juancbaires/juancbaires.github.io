@@ -300,6 +300,16 @@ h1 {
   width: 600px;
 }
 
+.image4 {
+  background: url('./img/FinalProject.png'), linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 600px;
+}
+
 #contact--info {
   background-color: black;
   height: 90px;
