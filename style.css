@@ -30,7 +30,7 @@ label {
 }
 
 .navbar-toggler {
-  background-color: #EA8825 !important;
+  background-color: #3C887E !important;
 }
 
 #nav .navbar-brand {
@@ -85,7 +85,7 @@ label {
   }
   .aboutMeH {
     font-size: 20px;
-    /* margin-top: 15px; */
+    margin-top: 15px;
   }
   .aboutMeP {
     font-size: 13px;
@@ -95,7 +95,7 @@ label {
 /* This is where the above media query ends! */
 
 #orange {
-  color: #EA8825 !important;
+  color: #3C887E !important;
 }
 
 .aboutMe {
@@ -108,7 +108,7 @@ label {
 .leftWhoAmI {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 780px;
@@ -128,7 +128,7 @@ label {
 }
 
 .fa-quote-left, .fa-quote-right {
-  color: #EA8825;
+  color: #3C887E;
   font-size: 80px;
 }
 
@@ -161,7 +161,7 @@ label {
 
 .aboutMeH {
   font-size: 40px;
-  color: #EA8825;
+  color: #3C887E;
 }
 
 .aboutParagraph {
@@ -227,13 +227,13 @@ label {
 
 .orangebar-right {
   padding: 0 0 0 2rem;
-  border-right: .5rem solid #EA8825;
+  border-right: .5rem solid #3C887E;
   height: 180px;
 }
 
 .orangebar {
   padding: 0 0 0 2rem;
-  border-left: .5rem solid #EA8825;
+  border-left: .5rem solid #3C887E;
   height: 180px;
 }
 
@@ -243,7 +243,7 @@ i {
 }
 
 .website {
-  background-color: #EA8825;
+  background-color: #3C887E;
   color: black;
   height: 35px;
   border-radius: 6px;
@@ -259,7 +259,7 @@ i {
 }
 
 .website-right {
-  background-color: #EA8825;
+  background-color: #3C887E;
   color: black;
   height: 35px;
   border-radius: 6px;
@@ -325,7 +325,7 @@ h1 {
 }
 
 #contact--info a:hover {
-  color: #EA8825;
+  color: #3C887E;
 }
 
 @media only screen and (max-width:798px) {
@@ -347,6 +347,7 @@ h1 {
   .leftWhoAmI {
     width: 100%;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     height: 100%;
@@ -384,6 +385,9 @@ h1 {
 
 @media only screen and (max-width:550px) {
   /* For mobile phones: */
+  #nav a {
+    color: #3C887E;
+  }
   .faceShot {
     background-size: cover;
   }
@@ -400,6 +404,7 @@ h1 {
   .leftWhoAmI {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     height: 100%;
