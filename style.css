@@ -200,7 +200,7 @@ label {
 } */
 
 .Project {
-  height: 730px;
+  height: 900px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -299,7 +299,7 @@ h1 {
 }
 
 .image3 {
-  background: url('./img/thirdProject.png'), linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
+  background: url('./img/Sweetest.png'), linear-gradient(220deg, rgb(41, 41, 39) 10%, rgb(164, 164, 165) 90%);
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
